@@ -13,7 +13,7 @@ class CastomerStoriesPage extends Page {
     async clickOnCosmoSection() {
         await this.cosmoSection.waitForClickable({timeout: 5000});
         await this.cosmoSection.click({force: true});
-        await browser.pause(3000);
+        await browser.pause(5000);
     }
 
     async checkCustomerStoriesUrl(customerStoriesUrl) {
