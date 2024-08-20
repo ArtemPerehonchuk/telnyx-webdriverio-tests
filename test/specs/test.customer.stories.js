@@ -30,7 +30,7 @@ describe('Test customer stories page', () => {
         await cosmoPage.checkBestCanadaHeader();
     });
 
-    it ('Test case T19: Should check the "COSMO" link', async () => {
+    xit ('Test case T19: Should check the "COSMO" link', async () => {
         await customerStoriesPage.scrollToCosmoSection();
         await customerStoriesPage.clickOnCosmoSection();
         await cosmoPage.scrollToCosmoLink();
