@@ -6,12 +6,13 @@ class SipTrunkingPage extends Page {
     get portalLink () {return $('span=portal')}
 
     async scrollToSeePricingButton() {
-        await this.seePricingBtn.waitForDisplayed(3000);
-        await this.seePricingBtn.scrollIntoView()
+        await this.seePricingBtn.waitForDisplayed({timeout: 5000});
+        await this.seePricingBtn.scrollIntoView();
+        await browser.pause(2000);
     }
 
     async clickSeePricingBtn() {
-        await this.seePricingBtn.waitForClickable(3000);
+        await this.seePricingBtn.waitForClickable({timeout: 5000});
         await this.seePricingBtn.click();
         await browser.waitUntil(async () => (await browser.execute(() => document.readyState)) === 'complete', {
             timeout: 20000,
