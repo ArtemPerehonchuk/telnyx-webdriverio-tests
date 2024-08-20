@@ -21,6 +21,7 @@ class CastomerStoriesPage extends Page {
     }
 
     async scrollToBestCanadaEnergySection() {
+        await this.bestCanadaSection.waitForExist({timeout: 5000});
         await this.bestCanadaSection.scrollIntoView();
     }
 
