@@ -26,11 +26,11 @@ jobs:
       - name: Run tests
         run: npm run test:all
 
-      - name: Build Docker image
-        run: npm run docker:build
+      # - name: Build Docker image
+      #   run: npm run docker:build
 
-      - name: Run Docker container
-        run: npm run docker:run
+      # - name: Run Docker container
+      #   run: npm run docker:run
 
       - name: Generate allure report
         run: npm run allure:generate
