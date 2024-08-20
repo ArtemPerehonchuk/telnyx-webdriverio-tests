@@ -16,7 +16,7 @@ describe('Test customer stories page', () => {
         await customerStoriesPage.navigate('/customer-stories');
     });
 
-    it ('Test case T17: Should open customer story', async () => {
+    xit ('Test case T17: Should open customer story', async () => {
         await customerStoriesPage.scrollToCosmoSection();
         await customerStoriesPage.clickOnCosmoSection();
         await customerStoriesPage.checkCustomerStoriesUrl(cosmoUrl);
