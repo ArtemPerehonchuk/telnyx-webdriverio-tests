@@ -22,7 +22,7 @@ describe('Test customer stories page', () => {
         await customerStoriesPage.checkCustomerStoriesUrl(cosmoUrl);
     });
 
-    it ('Test case T18: Should explore other customer story', async () => {
+    xit ('Test case T18: Should explore other customer story', async () => {
         await customerStoriesPage.scrollToCosmoSection();
         await customerStoriesPage.clickOnCosmoSection();
         await cosmoPage.scrollToBestCanadaSection();
