@@ -12,7 +12,7 @@ class CastomerStoriesPage extends Page {
 
     async clickOnCosmoSection() {
         await this.cosmoSection.waitForClickable({timeout: 5000});
-        await this.cosmoSection.click({force: true});
+        await this.cosmoSection.click();
         await browser.pause(5000);
     }
 
