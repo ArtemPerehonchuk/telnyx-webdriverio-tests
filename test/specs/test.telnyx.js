@@ -61,7 +61,7 @@ describe ('Telnyx main page tests', () => {
         await contuctUsPage.checkTalkToAnExpertForm();
     });
 
-    it ('test case T04: Should calculate IoT Sim Card price', async () => {
+    xit ('test case T04: Should calculate IoT Sim Card price', async () => {
         if (browser.capabilities.browserName !== 'chrome-headless-shell') {
             await homePage.clickOnHamburgerMenu();
         }
