@@ -12,6 +12,7 @@ class CosmoPage extends Page {
     }
 
     async scrollToBestCanadaSection() {
+        await this.bestCanadaSection.waitForExist({timeout: 5000});
         await this.bestCanadaSection.scrollIntoView();
     }
 
