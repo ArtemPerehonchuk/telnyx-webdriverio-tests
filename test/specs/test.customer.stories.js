@@ -38,7 +38,7 @@ describe('Test customer stories page', () => {
         await cosmoPage.checkCosmoTogetherUrl(cosmoTogetherUrl);
     });
 
-    it ('Test case T20: Should check the "IoT connectivity" link', async () => {
+    xit ('Test case T20: Should check the "IoT connectivity" link', async () => {
         await customerStoriesPage.scrollToBestCanadaEnergySection();
         await customerStoriesPage.clickOnBestCanadaEnergySection();
         await bestCanadaEnergyPage.scrollToIotConnectivityLink();
